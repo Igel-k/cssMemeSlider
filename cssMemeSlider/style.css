@@ -31,6 +31,7 @@ p {
 .slider__text {
   width: 70%;
   color: #eff6e0;
+  margin-bottom: 2rem;
 }
 
 .slider__pics,
@@ -46,6 +47,7 @@ p {
   width: 100%;
   border-radius: 1rem;
   flex-shrink: 0;
+  transition: transform 0.5s linear;
 }
 
 .text {
@@ -58,6 +60,7 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 1rem;
+  height: 1.7rem;
 }
 
 label {
@@ -71,10 +74,55 @@ label {
   border: 0.15rem solid #aec3b0;
   background-color: transparent;
   margin: 0.1rem;
+  transition: background-color 0.5s linear;
+}
+label:hover .radio {
+  background-color: #aec3b0;
 }
 #radio1:checked ~ .slider__points #l-radio1,
 #radio2:checked ~ .slider__points #l-radio2,
 #radio3:checked ~ .slider__points #l-radio3,
 #radio4:checked ~ .slider__points #l-radio4 {
   background-color: #eff6e0;
+}
+
+#radio1:checked ~ .slider__pics #pic1,
+#radio1:checked ~ .slider__pics #pic2,
+#radio1:checked ~ .slider__pics #pic3,
+#radio1:checked ~ .slider__pics #pic4,
+#radio1:checked ~ .slider__text #text1,
+#radio1:checked ~ .slider__text #text2,
+#radio1:checked ~ .slider__text #text3,
+#radio1:checked ~ .slider__text #text4 {
+  transform: translateX(0);
+}
+#radio2:checked ~ .slider__pics #pic1,
+#radio2:checked ~ .slider__pics #pic2,
+#radio2:checked ~ .slider__pics #pic3,
+#radio2:checked ~ .slider__pics #pic4,
+#radio2:checked ~ .slider__text #text1,
+#radio2:checked ~ .slider__text #text2,
+#radio2:checked ~ .slider__text #text3,
+#radio2:checked ~ .slider__text #text4 {
+  transform: translateX(-100%);
+}
+#radio3:checked ~ .slider__pics #pic1,
+#radio3:checked ~ .slider__pics #pic2,
+#radio3:checked ~ .slider__pics #pic3,
+#radio3:checked ~ .slider__pics #pic4,
+#radio3:checked ~ .slider__text #text1,
+#radio3:checked ~ .slider__text #text2,
+#radio3:checked ~ .slider__text #text3,
+#radio3:checked ~ .slider__text #text4 {
+  transform: translateX(-200%);
+}
+#radio4:checked ~ .slider__pics #pic1,
+#radio4:checked ~ .slider__pics #pic2,
+#radio4:checked ~ .slider__pics #pic3,
+#radio4:checked ~ .slider__pics #pic4,
+#radio4:checked ~ .slider__text #text1,
+#radio4:checked ~ .slider__text #text2,
+#radio4:checked ~ .slider__text #text3,
+#radio4:checked ~ .slider__text #text4 {
+  transform: translateX(-300%);
 }
