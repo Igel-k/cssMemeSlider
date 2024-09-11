@@ -2,12 +2,20 @@ body {
   background-color: #124559;
 }
 
+p {
+    margin: 0;
+}
+
 .slider {
   width: 70%;
   margin: auto;
   margin-top: 5rem;
   background-color: #598392;
   border-radius: 3rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .slider__pics {
@@ -17,7 +25,6 @@ body {
 
 .slider__text {
   width: 70%;
-  margin-left: 10%;
   color: #eff6e0;
 }
 
@@ -34,4 +41,9 @@ body {
   border-radius: 1rem;
   flex-shrink: 0;
   margin-top: 2rem;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
 }
