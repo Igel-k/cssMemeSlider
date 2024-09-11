@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>cssMemeSlider</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main class="slider">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="slider">
+        <input type="radio" name="radio" hidden id="radio1" checked />
+        <input type="radio" name="radio" hidden id="radio2" />
+        <input type="radio" name="radio" hidden id="radio3" />
+        <input type="radio" name="radio" hidden id="radio4" />
         <div class="slider__pics">
-            <img src="pics/pic1.jpg" alt="pic1" class="pic" id="pic1">
-            <img src="pics/pic2.jpg" alt="pic2" class="pic" id="pic2">
-            <img src="pics/pic3.jpg" alt="pic3" class="pic" id="pic3">
-            <img src="pics/pic4.jpg" alt="pic4" class="pic" id="pic4">
+          <img src="pics/pic1.jpg" alt="pic1" class="pic" id="pic1" />
+          <img src="pics/pic2.jpg" alt="pic2" class="pic" id="pic2" />
+          <img src="pics/pic3.jpg" alt="pic3" class="pic" id="pic3" />
+          <img src="pics/pic4.jpg" alt="pic4" class="pic" id="pic4" />
         </div>
         <div class="slider__text">
-            <p class="text" id="text1">Как заставить себя что-то делать</p>
-            <p class="text" id="text2">Как правильно готовить еду</p>
-            <p class="text" id="text3">Как выгрызть немного личного пространства</p>
-            <p class="text" id="text4">Исследование влияния недостатка сна на психику</p>
+          <p class="text" id="text1">Как заставить себя что-то делать</p>
+          <p class="text" id="text2">Как правильно готовить еду</p>
+          <p class="text" id="text3">
+            Как выгрызть немного личного пространства
+          </p>
+          <p class="text" id="text4">
+            Исследование влияния недостатка сна на психику
+          </p>
         </div>
         <div class="slider__points">
-            <input type="radio" name="radio" id="radio1" checked>
-            <input type="radio" name="radio" id="radio2">
-            <input type="radio" name="radio" id="radio3">
-            <input type="radio" name="radio" id="radio4">
+          <label for="radio1"><div class="radio" id="l-radio1"></div></label>
+          <label for="radio2"><div class="radio" id="l-radio2"></div></label>
+          <label for="radio3"><div class="radio" id="l-radio3"></div></label>
+          <label for="radio4"><div class="radio" id="l-radio4"></div></label>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

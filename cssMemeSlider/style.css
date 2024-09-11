@@ -3,24 +3,29 @@ body {
 }
 
 p {
-    margin: 0;
+  margin: 0;
+}
+
+.main {
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: #598392;
+  border-radius: 3rem;
 }
 
 .slider {
-  width: 70%;
+  width: 90%;
   margin: auto;
-  margin-top: 5rem;
-  background-color: #598392;
-  border-radius: 3rem;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .slider__pics {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .slider__text {
@@ -28,7 +33,8 @@ p {
   color: #eff6e0;
 }
 
-.slider__pics, .slider__text {
+.slider__pics,
+.slider__text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -40,10 +46,35 @@ p {
   width: 100%;
   border-radius: 1rem;
   flex-shrink: 0;
-  margin-top: 2rem;
 }
 
 .text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+.slider__points {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+label {
+  cursor: pointer;
+}
+
+.radio {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  border: 0.15rem solid #aec3b0;
+  background-color: transparent;
+  margin: 0.1rem;
+}
+#radio1:checked ~ .slider__points #l-radio1,
+#radio2:checked ~ .slider__points #l-radio2,
+#radio3:checked ~ .slider__points #l-radio3,
+#radio4:checked ~ .slider__points #l-radio4 {
+  background-color: #eff6e0;
 }
