@@ -7,7 +7,7 @@ p {
 }
 
 .main {
-  width: 70%;
+  width: 55%;
   margin: auto;
   margin-top: 3rem;
   background-color: #598392;
@@ -29,7 +29,7 @@ p {
 }
 
 .slider__text {
-  width: 70%;
+  width: 65%;
   color: #eff6e0;
   margin-bottom: 2rem;
 }
@@ -52,7 +52,7 @@ p {
 
 .text {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2rem;
+  font-size: 130%;
 }
 
 .slider__points {
