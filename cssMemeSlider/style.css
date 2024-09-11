@@ -3,7 +3,7 @@ body {
 }
 
 .slider {
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-top: 5rem;
   background-color: #598392;
@@ -13,25 +13,25 @@ body {
 .slider__pics {
   width: 90%;
   margin: auto;
-  margin-top: 1rem;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .slider__text {
   width: 70%;
   margin-left: 10%;
   color: #eff6e0;
+}
 
+.slider__pics, .slider__text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .pic,
 .text {
   width: 100%;
+  border-radius: 1rem;
   flex-shrink: 0;
+  margin-top: 2rem;
 }
